@@ -1,0 +1,7 @@
+<h1 [ngStyle]="{color: isAdmin ? 'red' : 'initial'}">{{title}}</h1>
+
+<button>View</button>
+
+<button *ngIf=" isAdmin">Edit</button>
+
+<button (click)="beAdmin()">To be or not to be Admin</button>
